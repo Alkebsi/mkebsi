@@ -1,0 +1,304 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	font-family: light;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+/*links in the site*/
+a
+{
+	color: #00ffc2;
+	text-decoration: none;
+	font-family: bold;
+	transition: transform 1s;
+}
+/*fonts*/
+@font-face
+{
+	font-family: light;
+	src: url("../fonts/light.ttf");
+}
+@font-face
+{
+	font-family: bold;
+	src: url("../fonts/bold.ttf");
+}
+@font-face
+{
+	font-family: myCursive;
+	src: url("../fonts/cursive.ttf");
+}
+h1, h2, h3, h4, h5, h6, b, strong, .bold
+{
+	font-family: bold;
+}
+
+/*the first thing in the index file*/
+.mainIntro p
+{
+	position: absolute;
+	display: inline;
+	left: 0;
+	color: #fff;
+	top: 10px;
+	z-index: 7;
+}
+.ysf
+{
+	position: absolute;
+	right: 0;
+}
+.introImg
+{
+	position: relative;
+	width: 100%;
+	display: inline;
+	z-index: 1;
+}
+
+/*main part number 2*/
+.mainTwo
+{
+	width: 95%;
+	margin: 0 auto;
+	box-shadow: 0 0 20px -5px black;
+	padding: 20px;
+	border-radius: 10px;
+}
+
+/*btns all available*/
+.btns
+{
+	padding: 20px;
+	background: none;
+	border: none;
+	transition: all 1s;
+	margin: 10px 5px;
+}
+.btns:hover
+{
+	transform: translate(0, -5px);
+}
+.btns:active
+{
+	transform: translate(0, -5px);
+}
+
+.btn1
+{
+	border-radius: 20px;
+	box-shadow: 2px 2px 10px -5px black;
+}
+.btn1:hover
+{
+	box-shadow: 5px 5px 10px -5px black;
+}
+.btn1:active
+{
+	box-shadow: 5px 5px 10px -5px black inset;
+}
+
+.btn2
+{
+	border-radius: 20px;
+	border: 2px solid #006f13;
+	background-image: url("../img/board2.jpg");
+	background-size: 100% 80px;
+	color: #fff; 
+	padding: 19px;
+}
+.btn2:active
+{
+	transform: translate(0, -5px);
+	border-radius: 0;
+	background-position: 0 80px;
+}
+
+.btn3
+{
+	border: 1px solid #005353;
+	transform: skewX(170deg);
+	background: white;
+}
+.btn3:hover
+{
+	transform: translate(0, -5px) skewX(10deg);
+	box-shadow: 3px 3px 10px -5px black;
+}
+.btn3:active, .btn3:focus
+{
+	transform: translate(0, -5px) skewX(0deg);
+	border-radius: 20%;
+}
+
+.btn4
+{
+	width: 80px;
+	height: 80px;
+	background-image: linear-gradient(to top, #f56e24, #ff9800);
+	border-radius: 50%;
+	color: #fff;
+}
+.btn4:active, .btn4:focus 
+{
+	animation: btn4 ease-in 0.5s;
+}
+@keyframes btn4
+{
+	0%{transform: scale(1) translate(0, -5px);}
+	25%{transform: scale(0.8) translate(0, -5px);}
+	75%{transform: scale(1.1) translate(0, -5px);}
+	100%{transform: scale(1) translate(0, -5px);}
+}
+/*the iframe*/
+.frame
+{
+	width: 90%;
+	height: 90%;
+	border: 0;
+	left: 10%;
+	position: relative;
+	opacity: 0.4;
+	filter: blur(5px);
+	transition: all 1s;
+}
+
+/*The third content*/
+.mainThree
+{
+	background: #000;
+	color: #fff;
+	z-index: 3;
+	position: relative; 
+}
+.the-dashes
+{
+	width: 63px;
+	height: 60px;
+	transition: all 1s;
+	margin: 0 auto;
+}
+.dashes 
+{
+	width: 60px;
+	height: 12px;
+	margin: 6px 0 6px 150px;
+	background-image: linear-gradient(to left, #ff2b2b -20%, #347C98 150%);
+	border-radius: 10px;
+	transition: all 1s;
+}
+.accor
+{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 5px 0;
+	background: #00ffc2;
+	color: #000;
+	border-radius: 10px;
+	border: 0;
+	display: block;
+	transition: all 0.5s;
+	filter: blur(5px);
+	transition: all 1s;
+	transform: translate(-10%, 0);
+}
+.aText
+{
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 5px;
+	border: 0;
+	border-radius: 0 0 10px 10px;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 1s;
+}
+.content
+{
+	border: 1px solid #fff;
+	padding: 10px;
+	border-radius: 10px;
+}
+.content p
+{
+	text-indent: 50px;
+	text-align: justify;
+}
+.firstLetter
+{
+	font-family: myCursive; 
+	font-size: 3em;
+}
+
+/*the last one before the copyrights*/
+.lastMain
+{
+	margin: -25px 0 -50px; 
+	width: 100%;
+	height: 400px;
+	overflow: auto;
+	z-index: -1;
+	position: reltive;
+}
+.imger
+{
+	width: 100%;
+	display: inline;
+}
+
+/*copyrights*/
+.copyrights
+{
+	background: #000;
+	color: #fff;
+	padding: 20px;
+	margin-top: -10px;
+	z-index: 3;
+	position: relative; 
+}
+.Clogo
+{
+	width: 100%;
+}
+/*the transitions*/
+.DTLdown
+{
+	width: 100%;
+	height: 30px;
+	transform: scaleY(-1);
+	background-image: url("../img/trans_light-dark.png");
+	background-size: 500px 60px;
+	animation: dtol linear 30s infinite;
+	position: relative;
+	top: -2px;
+}
+.DTL
+{
+	width: 100%;
+	height: 30px;
+	background-image: url("../img/trans_light-dark.png");
+	background-size: 500px 60px;
+	animation: dtol linear 30s infinite;
+	position: relative;
+	top: -2px;
+}
+.LTDdown
+{
+	width: 100%;
+	height: 30px;
+	transform: scaleY(-1);
+	background-image: url("../img/trans_dark-light.png");
+	background-size: 500px 60px;
+	animation: dtol linear 30s infinite;
+	position: relative;
+	top: -2px;
+}
+@keyframes dtol
+{
+	0%{background-position: 0 0;}
+	100%{background-position: 500px 0;}
+}
